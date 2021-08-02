@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+    <primitive>true</primitive>
+    <annotatorImplementationName>palepalu.k</annotatorImplementationName>
+    <analysisEngineMetaData>
+        <name>Argo Example Analysis Engine</name>
+        <description>Describe the analysis engine here - this javadoc will appear as the&#13;
+description within the analysis engine's automatically generated UIMA XML&#13;
+descriptor file.</description>
+        <version>1.0-SNAPSHOT</version>
+        <vendor>The National Centre for Text Mining (NaCTeM)</vendor>
+        <configurationParameters>
+            <configurationParameter>
+                <name>caseSensitive</name>
+                <description>An example configuration parameter. For more information on how to use Apache&#13;
+uimaFIT annotations to define configuration parameters please see&#13;
+https://goo.gl/XsrA77 [uima.apache.org]. This javadoc will appear as the&#13;
+description of this parameter within the UIMA XML descriptor.</description>
+                <type>Boolean</type>
+                <multiValued>false</multiValued>
+                <mandatory>false</mandatory>
+            </configurationParameter>
+        </configurationParameters>
+        <configurationParameterSettings>
+            <nameValuePair>
+                <name>caseSensitive</name>
+                <value>
+                    <boolean>true</boolean>
+                </value>
+            </nameValuePair>
+        </configurationParameterSettings>
+        <typeSystemDescription>
+            <imports>
+                <import name="org.u_compare.U_compareTypeSystem"/>
+                <import name="uk.ac.nactem.uima.EventTypeSystem"/>
+            </imports>
+        </typeSystemDescription>
+        <typePriorities/>
+        <fsIndexCollection/>
+        <capabilities>
+            <capability>
+                <inputs/>
+                <outputs>
+                    <type>org.u_compare.shared.semantic.Place</type>
+                </outputs>
+                <languagesSupported>
+                    <language>en</language>
+                </languagesSupported>
+            </capability>
+        </capabilities>
+        <operationalProperties>
+            <modifiesCas>true</modifiesCas>
+            <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+            <outputsNewCASes>false</outputsNewCASes>
+        </operationalProperties>
+    </analysisEngineMetaData>
+</analysisEngineDescription>
